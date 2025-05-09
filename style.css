@@ -77,3 +77,59 @@ main {
   gap: 10px;
   flex-wrap: wrap;
 }
+.search-area input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-area button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #080808;
+  color: rgb(234, 197, 199);
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s;
+}
+
+.search-area button:hover {
+  background-color: #e26d13;
+}
+
+
+.country-card {
+  background: rgb(198, 10, 54);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(99, 17, 17, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.country-card img {
+  width: 100px;
+}
+
+.country-details {
+  margin-top: 15px;
+}
+
+.country-details p {
+  margin: 5px 0;
+}
+
+footer {
+  background-color:#09ac29;
+  color: #1e0909;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: auto;
+}
