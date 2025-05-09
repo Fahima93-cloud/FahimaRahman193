@@ -3,9 +3,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Information Website</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <link href ="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel=""stylesheet">
 </head>
+
 <body>
-    
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <h1>🌍 GeoGlobe Explorer 🌍</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+    <main>
+    <div class="search-area">
+      <input type="text" id="countryInput" placeholder="Enter a country name">
+      <button onclick="searchCountry()">Search</button>
+    </div>
+
+       <section id="result"></section>
+  </main>
+
+  <footer>
+    <p>© 2025 Country Finder | Powered by RESTCountries API</p>
+  </footer>
+
+  <script src="api.js"></script>
 </body>
 </html>
