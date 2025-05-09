@@ -1,13 +1,15 @@
 async function searchCountry() {
   const countryName = document.getElementById('countryInput').value.trim();
   const result = document.getElementById('result');
+  
+  result.innerHTML = ""; // Clear previous results
 
   if (countryName === "") {
     alert("Please enter a country name!");
     return;
   }
-}
-if (countryName.length < 2) {
+
+  if (countryName.length < 2) {
     alert("Please enter at least 2 characters!");
     return;
   }
@@ -40,3 +42,4 @@ if (countryName.length < 2) {
   } catch (error) {
     result.innerHTML = `<p style="color: red;">${error.message}</p>`;
   }
+}
